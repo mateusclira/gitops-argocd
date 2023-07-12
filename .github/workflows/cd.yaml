@@ -20,13 +20,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-
       - name: Build and push image to dockerhub
         uses: docker/build-push-action@v4
         with:
-          repository: ${{ secrets.DOCKERHUB_USERNAME }}/gitops
-          tags: ${{ github.sha }}
+          context: .
+          file: ./Dockerfile
           push: true
+          tags: ${{ github.sha }}
       
