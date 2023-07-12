@@ -20,5 +20,5 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: ${{ secrets.DOCKERHUB_USERNAME }}/gitops
-          tags: ${{ github.sha }}, latest
+          tags: ${{ github.sha }}
       
