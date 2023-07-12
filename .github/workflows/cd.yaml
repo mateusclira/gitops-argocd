@@ -29,5 +29,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/gitops:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/gitops:$GITHUB_SHA
       
