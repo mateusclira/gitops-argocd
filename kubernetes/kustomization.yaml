@@ -8,5 +8,4 @@ resources:
 images:
 - name: goserver
   newName: mateusclira/gitops
-  newTag: 55f36cb53adbe095
-  
+  newTag: 77ec3ce8eab671a53362aa31bb9a8490a816c5f8
