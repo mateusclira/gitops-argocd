@@ -55,5 +55,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
-          repository: mateusclira/gitops        
+          repository: mateusclira/gitops-argocd        
       
